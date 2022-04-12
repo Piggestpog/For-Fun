@@ -1,0 +1,14 @@
+{
+  "name": "task_remote",
+  "task": [
+    {
+      "config": "0 10 0 * * ? https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=Hifini签到, img-url=, enabled=true",
+      "addons": "https://raw.githubusercontent.com/Piggestpog/Proxies/main/QuantumultX/BoxJs/Addons/HifiniCookie.conf, tag=Hifini签到Cookie"
+    },
+    {
+      "config": "5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js, tag=机场签到, img-url=https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif, enabled=true",
+      "addons": ", tag=机场签到Cookie"
+    },
+  ],
+  "description": "By Piggy"
+}
