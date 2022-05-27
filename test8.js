@@ -1,5 +1,5 @@
 
-let obj=JSON.parse($response.body);
+let obj=JSON.parse($response.body)
 obj = {
   "account": [{
     "pro_mode": true,
@@ -8,4 +8,4 @@ obj = {
   }]
 }
 
-$done({body:JSON.stringify(obj)});
+$done({body:JSON.stringify(obj)})
