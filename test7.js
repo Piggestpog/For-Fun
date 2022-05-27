@@ -2,9 +2,9 @@
 let obj=JSON.parse($response.body);
 obj = {
   "account": {
-    "pro_mode": true,
-    "plan_type": "Premium",
-    "user_type": "Premium"
+    "pro_mode" = true,
+    "plan_type" = "Premium",
+    "user_type" = "Premium"
   }
 }
 
