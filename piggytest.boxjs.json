@@ -300,7 +300,7 @@
         }
       ]
     },
-        { // 开始
+    { // 开始
       "id": "JD_Cookies",
       "name": "京东Cookie",
       "keys": ["CookiesJD", "cks_get_mute"],
