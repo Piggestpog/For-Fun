@@ -1,0 +1,341 @@
+{
+  "id": "piggy.app.sub",
+  "name": "Piggy应用订阅",
+  "author": "@Piggy",
+  "icon": "",
+  "repo": "https://github.com/Piggestpog/Proxies/tree/main/QuantumultX",
+  "apps": [
+    {
+      "id": "checkincookie",
+      "name": "机场Cookie签到",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js\">脚本地址</a>】",
+        "此版本为尝试用Cookie签到，针对有登陆验证或跳转的机场。",
+        "可利用BoxJs<font class=\"error--text\">会话切换</font>功能，一次保存一个机场信息，切换会话签到。"
+      ],
+      "keys": ["evil_checkincktitle", "evil_checkinurl", "evil_checkincookie"],
+      "settings": [
+        {
+          "id": "evil_checkincktitle",
+          "name": "机场名称",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "手动填入机场名称"
+        },
+        {
+          "id": "evil_checkinurl",
+          "name": "登录链接",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "手动填入登陆链接"
+        },
+        {
+          "id": "evil_checkincookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "自动获取，也可手动填入Cookie，请不要修改"
+        }
+      ],
+      "author": "@Neurogram, @evilbutcher",
+      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/glados_mini.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js"
+    },
+    {
+      "id": "HifiniSignIn",
+      "name": "Hifini签到",
+      "desc_html": "详情【<a href='https://github.com/lowking/Scripts/blob/master/hifini/hifiniSign.js?raw=true'><font class='red--text'>点我查看</font></a>】",
+      "icons": [
+        "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin-dark.png",
+        "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin.png"
+      ],
+      "keys": [
+        "lkHifiniCookieKey"
+      ],
+      "settings": [
+        {
+          "id": "lkIsEnableLogHifiniSignIn",
+          "name": "开启/关闭日志",
+          "val": true,
+          "type": "boolean",
+          "desc": "默认开启"
+        },
+        {
+          "id": "lkNotifyOnlyFailHifiniSignIn",
+          "name": "只当执行失败才通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
+        },
+        {
+          "id": "lkIsEnableTgNotifyHifiniSignIn",
+          "name": "开启/关闭Telegram通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
+        },
+        {
+          "id": "lkTgNotifyUrlHifiniSignIn",
+          "name": "Telegram通知地址",
+          "val": "",
+          "type": "text",
+          "desc": "Tg的通知地址，如：https://api.telegram.org/bot-token/sendMessage?chat_id=-100140&parse_mode=Markdown&text="
+        },
+        {
+          "id": "lkHifiniCookieKey",
+          "name": "hifini cookie",
+          "val": "",
+          "type": "text",
+          "desc": "hifini cookie"
+        },
+        {
+          "id": "lkHifiniIsTakeTheFirst",
+          "name": "是否抢签到第一",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
+        },
+        {
+          "id": "lkHifiniTakeTheFirstCount",
+          "name": "抢签到第一并发数",
+          "val": 20,
+          "type": "number",
+          "desc": "默认20"
+        },
+        {
+          "id": "lkHifiniSec",
+          "name": "抢签到等待至xx秒",
+          "val": 59,
+          "type": "number",
+          "desc": "默认59s"
+        },
+        {
+          "id": "lkHifiniMsec",
+          "name": "抢签到等待至xxx毫秒",
+          "val": 0,
+          "type": "number",
+          "desc": "默认0ms"
+        },
+        {
+          "id": "lkHifiniTimeInterval",
+          "name": "设定固定时间间隔",
+          "val": 100,
+          "type": "number",
+          "desc": "默认100ms"
+        },
+        {
+          "id": "lkHifiniRunType",
+          "name": "运行脚本方式",
+          "val": "1",
+          "type": "radios",
+          "items": [
+            {
+              "key": "1",
+              "label": "并发执行"
+            },
+            {
+              "key": "2",
+              "label": "顺序执行"
+            },
+            {
+              "key": "3",
+              "label": "固定时间间隔顺序执行"
+            }
+          ],
+          "desc": "默认并发执行"
+        }
+      ],
+      "author": "@lowking",
+      "repo": "https://github.com/lowking/Scripts",
+      "script": "https://github.com/lowking/Scripts/blob/master/hifini/hifiniSign.js?raw=true"
+    },
+    {
+      "id": "ZhihuNoAds",
+      "name": "知乎NoAds",
+      "keys": ["zhihu_blocked_users", "zhihu_current_userinfo", "zhihu_keyword_block"],
+      "author": "@blackmatrix7",
+      "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu",
+      "icons": ["https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png", "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png"],
+      "descs_html": [
+        "<h4 align=\"left\">具体功能说明查看<a href=\"https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu#readme\">README.md</a></h4>",
+        "<h4 align=\"left\">✨为Plus版本专属功能，❓为已过时或即将淘汰功能</h4>",
+        "<h4 align=\"left\">切换Lite、Plus版本，或出现异常请执行数据清理</h4>"
+      ],
+      "scripts": [
+        {
+          "name": "知乎助手数据清理",
+          "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js"
+        }
+      ],
+      "settings": [
+        {
+          "id": "zhihu_settings_recommend_stream",
+          "name": "屏蔽推荐页流媒体",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽推荐页中的视频、直播等流媒体信息"
+        },
+        {
+          "id": "zhihu_settings_moments_stream",
+          "name": "屏蔽关注页流媒体",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽关注页中的“最新视频”"
+        },
+        {
+          "id": "zhihu_settings_hot_list",
+          "name": "热榜去广告",
+          "val": true,
+          "type": "boolean",
+          "desc": "去除知乎热榜页面的广告"
+        },
+        {
+          "id": "zhihu_settings_fake_vip",
+          "name": "显示为盐选会员",
+          "val": false,
+          "type": "boolean",
+          "desc": "非会员用户显示为盐选会员，仅自己可见，无实际效果"
+        },
+        {
+          "id": "zhihu_settings_preset_words",
+          "name": "屏蔽预置关键词广告",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽搜索页中的预置关键词广告"
+        },
+        {
+          "id": "zhihu_settings_blocked_users",
+          "name": "黑名单屏蔽效果增强✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "增强知乎APP黑名单用户屏蔽效果"
+        },
+        {
+          "id": "zhihu_settings_blocked_keywords",
+          "name": "推荐页关键词过滤✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "除普通关键词外还支持正则表达式过滤"
+        },
+        {
+          "id": "zhihu_settings_sys_msg",
+          "name": "屏蔽官方账号推广消息✨",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽消息页内的官方账号推广消息"
+        },
+        {
+          "id": "zhihu_settings_answer_tip",
+          "name": "付费内容/营销推广/购物推广提醒✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "在知乎回答中提示付费或营销内容"
+        },
+        {
+          "id": "zhihu_settings_remove_yanxuan",
+          "name": "屏蔽“盐选推荐”❓",
+          "val": true,
+          "type": "boolean",
+          "desc": "屏蔽推荐页中的“盐选推荐”"
+        },
+        {
+          "id": "zhihu_settings_app_conf",
+          "name": "去除推荐页多余标签❓",
+          "val": false,
+          "type": "boolean",
+          "desc": "知乎7.x及以上版本无效"
+        },
+        {
+          "id": "zhihu_settings_hot_search",
+          "name": "知乎热搜去广告❓",
+          "val": false,
+          "type": "boolean",
+          "desc": "知乎7.x及以上版本无效"
+        },
+        {
+          "id": "zhihu_keyword_block",
+          "name": "知乎屏蔽关键词",
+          "val": "",
+          "type": "textarea",
+          "desc": "必须是JSON格式，Key为用户Id，不要修改。格式不正确可能导致执行异常。"
+        },
+        {
+          "id": "magicjs_loglevel",
+          "name": "日志等级",
+          "val": "INFO",
+          "type": "radios",
+          "items": [
+            {
+              "key": "INFO",
+              "label": "INFO"
+            },
+            {
+              "key": "WARNING",
+              "label": "WARNING"
+            },
+            {
+              "key": "ERROR",
+              "label": "ERROR"
+            },
+            {
+              "key": "CRITICAL",
+              "label": "CRITICAL"
+            },
+            {
+              "key": "DEBUG",
+              "label": "DEBUG"
+            }
+          ],
+          "desc": "出现异常时请选择DEBUG提交日志"
+        }
+      ]
+    },
+    {
+      "id": "JD_Cookies",
+      "name": "京东Cookies",
+      "keys": ["CookiesJD"],
+      "descs_html": [
+        "<a href=\"https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js\">抓取教程</a>"          
+      ],
+      "settings": [
+        {
+          "id": "del_condition",
+          "name": "删除序号",
+          "val": "",
+          "type": "text",
+        },
+        {
+          "id": "CookiesJD",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": false,
+          "rows": 8,
+          "desc": "JSON 格式"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+      ],
+      "author": "@dompling",
+      "repo": "https://github.com/dompling/Script",
+      "scripts": [
+        {
+          "name": "删除输入 ck",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
+        }
+      ]
+    }
+  ]
+}
