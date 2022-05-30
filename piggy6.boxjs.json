@@ -337,7 +337,7 @@
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
       ],
       "author": "@dompling",
-      "repo": "https://github.com/dompling/Script",
+      "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
       "scripts": [
         {
           "name": "删除输入 ck",
