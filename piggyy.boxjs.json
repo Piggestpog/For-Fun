@@ -305,7 +305,7 @@
       "name": "京东Cookies",
       "keys": ["CookiesJD"],
       "descs_html": [
-        "<a href=\"https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js\">抓取教程</a>"          
+        "【<a href=\"https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js\">抓取教程</a>】"          
       ],
       "settings": [
         {
