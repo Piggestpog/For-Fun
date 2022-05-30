@@ -1,3 +1,38 @@
+function CookieUpdate(oldValue, newValue, path = 'cookie') {
+  let item, type, name = (oldValue || newValue || '').split(/pt_pin=(.+?);/)[1];
+  let total = $nobyda.read('CookiesJD');
+  try {
+    total = checkFormat(JSON.parse(total || '[]'));
+  } catch (e) {
+    $nobyda.notify("京东签到", "", "Cookie JSON格式不正确, 即将清空\n可前往日志查看该数据内容!");
+    console.log(`京东签到Cookie JSON格式异常: ${e.message||e}\n旧数据内容: ${total}`);
+    total = [];
+  }
+  for (let i = 0; i < total.length; i++) {
+    if (total[i].cookie && new RegExp(`pt_pin=${name};`).test(total[i].cookie)) {
+      item = i;
+      break;
+    }
+  }
+  if (newValue && item !== undefined) {
+    type = total[item][path] === newValue ? -1 : 2;
+    total[item][path] = newValue;
+    item = item + 1;
+  } else if (newValue && path === 'cookie') {
+    total.push({
+      cookie: newValue
+    });
+    type = 1;
+    item = total.length;
+  }
+  return {
+    total: checkFormat(total),
+    type, //-1: same, 1: add, 2:update
+    item,
+    name: decodeURIComponent(name)
+  };
+}
+
 function GetCookie() {
   const req = $request;
   if (req.method != 'OPTIONS' && req.headers) {
