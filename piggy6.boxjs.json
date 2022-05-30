@@ -302,22 +302,22 @@
     },
     {
       "id": "JD_Cookies",
-      "name": "京东Cookies",
+      "name": "京东账号",
       "keys": ["CookiesJD", "cks_get_mute"],
       "descs_html": [
-        "<a href=\"https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js\">抓取教程</a>"          
+        "Test1"
       ],
       "settings": [
         {
           "id": "cks_get_mute",
-          "name": "关闭提醒",
+          "name": "静音获取",
           "val": false,
           "type": "boolean",
           "desc": ""
         },
         {
           "id": "del_condition",
-          "name": "删除序号",
+          "name": "删除条件",
           "val": "",
           "type": "text",
           "desc": ""
@@ -329,7 +329,7 @@
           "type": "textarea",
           "autoGrow": false,
           "rows": 8,
-          "desc": "JSON 格式"
+          "desc": ""
         }
       ],
       "icons": [
@@ -340,7 +340,7 @@
       "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
       "scripts": [
         {
-          "name": "删除输入 ck",
+          "name": "删除相关 ck",
           "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
         }
       ]
